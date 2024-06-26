@@ -33,7 +33,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to="/">Pocetna strana</Link>
+                <Link to="/">Početna strana</Link>
               </li>
 
               <li>
@@ -47,11 +47,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">DarkoMax</a>
+          <a className="btn btn-ghost text-xl">Start Fitness</a>
         </div>
         <div className="navbar-end gap-3">
           <span className="btn btn-ghost btn-circle">
-            <FaPhoneAlt size={20} />
+            <FaPhoneAlt size={20} className="hidden md:block" />
           </span>
           <span className="underline p-2 hidden md:block">+381 64 4865787</span>
         </div>
