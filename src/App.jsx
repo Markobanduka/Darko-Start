@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./components/ui/Cards";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ContactPage from "./components/pages/ContactPage";
+import ContactPage from "./components/pages/contactPage/ContactPage";
 import HomePage from "./components/pages/HomePage";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
