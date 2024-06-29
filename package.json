@@ -12,7 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.11",
+    "framer-motion": "^11.2.12",
     "icons": "^1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

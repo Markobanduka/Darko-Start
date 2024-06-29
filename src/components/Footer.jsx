@@ -19,10 +19,7 @@ export const Footer = () => {
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a
-          href="https://www.instagram.com/fitnesstudiostart?utm_source=qr&igsh=bjhxMTkwZ3NuNWp6"
-          target="blank"
-        >
+        <a href="https://www.instagram.com/fitnesstudiostart/" target="blank">
           <GrInstagram size={24} />
         </a>
       </nav>
