@@ -37,7 +37,10 @@ const Navbar = () => {
               </li>
 
               <li>
-                <Link>Portfolio </Link>
+                <Link>Cene</Link>
+              </li>
+              <li>
+                <Link to="/galerija">Galerija</Link>
               </li>
 
               <li>
