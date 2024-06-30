@@ -11,12 +11,13 @@ const App = () => {
       </div>
 
       <div className="text-2xl p-10">
-        Ovde moze tekst koji treninzi postoje...
+        Ovde moze tekst koji je nacin rada, koje se metodi koriste, koji
+        treninzi postoje...
       </div>
 
       <div className="mt-7 ">
         <h3 className="flex justify-center text-3xl mb-7">
-          Sta su drugi misle o nama?
+          Sta drugi misle o nama?
         </h3>
         <Cards />
       </div>

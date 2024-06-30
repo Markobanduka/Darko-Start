@@ -51,7 +51,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" onClick={handleLinkClick}>
+                  <Link to="/cene" onClick={handleLinkClick}>
                     Cene
                   </Link>
                 </li>

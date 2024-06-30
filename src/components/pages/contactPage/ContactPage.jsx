@@ -1,5 +1,9 @@
 import React from "react";
 import { Email } from "./Email";
+import { GiPathDistance } from "react-icons/gi";
+import { CiDumbbell } from "react-icons/ci";
+import { TbParkingCircle } from "react-icons/tb";
+import { HiOutlinePhone } from "react-icons/hi2";
 
 const ContactPage = () => {
   return (
@@ -8,11 +12,32 @@ const ContactPage = () => {
         <h1 className="text-5xl mt-5">Kako do nas?</h1>
       </div>
 
-      <div className="mt-7">
+      <div className="mt-7 mb-3 md:p-4 lg:p-6 lg:mb-0">
         <h3 className="text-3xl">Adresa</h3>
-        <div>Zemun, Radoja Dakića 57</div>
-        <div>Ponedeljak-Subota 08-21h</div>
-        <div>Dostupan parking</div>
+        <div className="flex items-center">
+          Zemun, Radoja Dakića 57{" "}
+          <span className="mx-3">
+            <GiPathDistance />
+          </span>
+        </div>
+        <div className="flex items-center">
+          Ponedeljak-Subota 08-21h{" "}
+          <span className="mx-2">
+            <CiDumbbell />
+          </span>
+        </div>
+        <div className="flex items-center">
+          Dostupan parking{" "}
+          <span className="mx-2">
+            <TbParkingCircle />
+          </span>
+        </div>
+        <div className="flex items-center underline">
+          +381 64 4865787{" "}
+          <span className="mx-2">
+            <HiOutlinePhone />
+          </span>
+        </div>
       </div>
       <div className="relative overflow-hidden pb-[56.25%] h-0 md:pb-[75%] lg:pb-[50%] mb-14">
         <iframe
