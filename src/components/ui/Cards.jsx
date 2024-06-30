@@ -3,7 +3,7 @@ import { cn } from "../../utils/cn";
 
 export default function Cards() {
   return (
-    <div className="h-[40rem] flex items-center justify-center w-full">
+    <div className="h-[20rem] flex items-center justify-center w-full">
       <CardStack items={CARDS} />
     </div>
   );
@@ -43,7 +43,7 @@ const CARDS = [
       <p>
         Svaki novi trening predsavlja izazov za mene. Sa Darkovom{" "}
         <Highlight>izbalansiranom ishranu</Highlight> nikad ne osecam da sam
-        gladna. Na tebi je da uradis prvi korak sve posle ce bit lako.
+        gladna. Na tebi je da uradis prvi korak.
       </p>
     ),
   },
