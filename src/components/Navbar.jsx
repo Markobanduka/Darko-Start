@@ -78,7 +78,7 @@ const Navbar = () => {
           <span className="btn btn-ghost btn-circle">
             <FaPhoneAlt size={20} className="hidden md:block" />
           </span>
-          <a href="tel:064865787" className="underline p-2 hidden md:block">
+          <a href="tel:0644865787" className="underline p-2 hidden md:block">
             +381 64 4865787
           </a>
         </div>
