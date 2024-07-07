@@ -88,36 +88,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <a
-href="tel:+3814562355"
-className="font-inter text-sm text-blue-500"
->
-+381 456 2355
-</a>
-<a
-href="mailto:example@example.com"
-className="font-inter text-sm text-blue-500"
->
-Send Email
-</a>
-<a
-href="sms:+1234567890"
-className="font-inter text-sm text-blue-500"
->
-Send SMS
-</a>
-<a
-href="https://wa.me/1234567890"
-className="font-inter text-sm text-blue-500"
->
-Chat on WhatsApp
-</a>
-<a
-href="https://www.google.com/maps?q=37.7749,-122.4194"
-className="font-inter text-sm text-blue-500"
->
-Open in Google Maps
-</a> */
-}

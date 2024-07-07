@@ -1,5 +1,6 @@
 import React from "react";
 import { GrInstagram } from "react-icons/gr";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -21,6 +22,9 @@ export const Footer = () => {
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a href="tel:0644865787" className="md:hidden underline">
           +381 64 4865787
+        </a>
+        <a href="https://wa.me/1234567890" className="">
+          <FaWhatsapp size={24} />
         </a>
         <a href="https://www.instagram.com/fitnesstudiostart/" target="blank">
           <GrInstagram size={24} />
