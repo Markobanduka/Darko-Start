@@ -52,7 +52,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/cene" onClick={handleLinkClick}>
-                    Cene
+                    Programi
                   </Link>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-center">
           <Link to="/">
-            <div className="btn btn-ghost text-xl">Start Fitness</div>
+            <img src="./logo26.png" alt="" className="h-14" />
           </Link>
         </div>
         <div className="navbar-end gap-3">

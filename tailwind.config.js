@@ -8,6 +8,6 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["sunset"],
+    themes: ["sunset", "corporate"],
   },
 };
