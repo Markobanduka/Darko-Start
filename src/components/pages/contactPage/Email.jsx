@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Email = () => {
@@ -9,10 +9,10 @@ export const Email = () => {
 
     emailjs
       .sendForm(
-        "service_p8exmpj",
-        "template_j24528e",
+        "service_cxdrtnc",
+        "template_54mhlbs",
         form.current,
-        "y-OykixIX0WSfc3BY"
+        "sEjeQX83YxYpQUxMo"
       )
       .then(
         (result) => {

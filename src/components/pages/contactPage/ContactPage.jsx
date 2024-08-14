@@ -1,4 +1,3 @@
-import React from "react";
 import { Email } from "./Email";
 import { GiPathDistance } from "react-icons/gi";
 import { CiDumbbell } from "react-icons/ci";
