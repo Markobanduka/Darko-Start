@@ -1,6 +1,4 @@
-import React from "react";
-import Cards from "./components/ui/Cards";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ContactPage from "./components/pages/contactPage/ContactPage";
 import HomePage from "./components/pages/homePage/HomePage";
 import Navbar from "./components/Navbar";
@@ -15,7 +13,7 @@ const App = () => {
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/cene" element={<PricingPage />} />
+          <Route path="/programi" element={<PricingPage />} />
           <Route path="/galerija" element={<GalleryPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
         </Routes>

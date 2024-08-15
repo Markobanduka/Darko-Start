@@ -8,34 +8,35 @@ const ContactPage = () => {
   return (
     <div>
       <div className="flex justify-center">
-        <h1 className="text-5xl mt-5">Kako do nas?</h1>
+        <h1 className="text-5xl mt-5 mb-10 underline">Kako do nas?</h1>
       </div>
 
-      <div className="mt-7 mb-3 md:p-4 lg:p-6 lg:mb-0">
-        <h3 className="text-3xl">Adresa</h3>
-        <div className="flex items-center">
-          Zemun, Radoja Dakića 57{" "}
-          <span className="mx-3">
-            <GiPathDistance />
-          </span>
-        </div>
-        <div className="flex items-center">
-          Ponedeljak-Subota 08-21h{" "}
-          <span className="mx-2">
-            <CiDumbbell />
-          </span>
-        </div>
-        <div className="flex items-center">
-          Dostupan parking{" "}
-          <span className="mx-2">
-            <TbParkingCircle />
-          </span>
-        </div>
-        <div className="flex items-center underline">
-          +381 64 4865787{" "}
-          <span className="mx-2">
-            <HiOutlinePhone />
-          </span>
+      <div className="flex justify-center items-center mb-8">
+        <div className=" justify-center items center">
+          <div className="flex items-center text-2xl">
+            Zemun, Radoja Dakića 57{" "}
+            <span className="mx-3">
+              <GiPathDistance />
+            </span>
+          </div>
+          <div className="flex items-center text-2xl">
+            Ponedeljak-Subota 08-21h{" "}
+            <span className="mx-2">
+              <CiDumbbell />
+            </span>
+          </div>
+          <div className="flex items-center text-2xl">
+            Dostupan parking{" "}
+            <span className="mx-2">
+              <TbParkingCircle />
+            </span>
+          </div>
+          <div className="flex items-center underline underline-offset-4 text-2xl">
+            +381 64 4865787{" "}
+            <span className="mx-2">
+              <HiOutlinePhone />
+            </span>
+          </div>
         </div>
       </div>
       <div className="relative overflow-hidden pb-[56.25%] h-0 md:pb-[75%] lg:pb-[50%] mb-14">

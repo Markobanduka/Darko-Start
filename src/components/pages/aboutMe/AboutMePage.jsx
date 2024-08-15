@@ -22,14 +22,6 @@ const AboutMePage = () => {
         stvaranju prilagodjenih programa treninga koji vam mogu pomoci da
         postignete zdraviji i funkcionalniji nacin zivota.
       </div>
-      <div>
-        {" "}
-        <img
-          src="/teretana-3.webp"
-          alt="gym"
-          className="w-full h-auto max-w-md mx-auto lg:max-w-md"
-        />
-      </div>
     </div>
   );
 };

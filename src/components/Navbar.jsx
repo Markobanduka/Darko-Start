@@ -51,7 +51,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/cene" onClick={handleLinkClick}>
+                  <Link to="/programi" onClick={handleLinkClick}>
                     Programi
                   </Link>
                 </li>
