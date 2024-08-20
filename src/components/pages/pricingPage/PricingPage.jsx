@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PricingPage = () => {
   return (
     <section className="bg-gray dark:bg-gray-900">
@@ -15,13 +17,13 @@ const PricingPage = () => {
         {/* Individualni treninzi Section */}
         <hr className="p-5 border-gray-700" />
         <div className="mb-12 ">
-          <h2 className="mb-8 text-6xl font-bold text-center text-white-900 dark:text-white">
+          <h2 className="mb-8 text-4xl font-bold text-center text-white-900 dark:text-white">
             Individualni treninzi
           </h2>
           <div className="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 mb-20">
             {/* Rekreativni paket Card */}
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white relative">
-              <h3 className="mb-4 text-3xl font-bold tracking-wider">
+              <h3 className="mb-4 text-2xl font-bold tracking-wider">
                 Rekreativni paket
               </h3>
               <div className="flex justify-center items-baseline my-8">
@@ -92,12 +94,12 @@ const PricingPage = () => {
                   <span>Savetovanje o ishrani</span>
                 </li>
               </ul>
-              <a
-                href="#"
+              <Link
+                to="/kontakt"
                 className="bg-sky-500 text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 lg:absolute bottom-8"
               >
                 Zakaži besplatan probni trening
-              </a>
+              </Link>
             </div>
 
             {/* Specijalizovani paket Card */}
@@ -246,24 +248,24 @@ const PricingPage = () => {
                   <span>Posturalna korekcija</span>
                 </li>
               </ul>
-              <a
-                href="#"
+              <Link
+                to="/kontakt"
                 className="bg-sky-500 text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
               >
                 Zakaži besplatan probni trening
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <hr className="p-5  border-gray-700" />
         {/* Poluindividualni treninzi Section */}
         <div className="" id="scroll-target-poluindividualni">
-          <h2 className="mb-8 text-6xl font-bold text-center text-white-900 dark:text-white">
+          <h2 className="mb-8 text-4xl font-bold text-center text-white-900 dark:text-white">
             Poluindividualni treninzi
           </h2>
           <div className="space-y-8 lg:grid  sm:gap-6 xl:gap-10 lg:space-y-0">
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 className="mb-4 text-3xl font-bold">
+              <h3 className="mb-4 text-2xl font-bold">
                 Poluindividualni paket
               </h3>
               <span className="text-gray-400 ">Cena treninga je po osobi</span>
@@ -335,12 +337,12 @@ const PricingPage = () => {
                   <span>Savetovanje o ishrani</span>
                 </li>
               </ul>
-              <a
-                href="#"
+              <Link
+                to="/kontakt"
                 className="bg-sky-500 text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
               >
                 Zakaži besplatan probni trening
-              </a>
+              </Link>
             </div>
           </div>
         </div>

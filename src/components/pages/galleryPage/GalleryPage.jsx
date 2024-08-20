@@ -1,4 +1,3 @@
-import React from "react";
 import { SwipeCarousel } from "./SwipeCarousel";
 import Cards from "../../ui/Cards";
 
@@ -9,12 +8,6 @@ const App = () => {
       <div className="">
         <SwipeCarousel />
       </div>
-
-      <div className="text-2xl p-10">
-        Ovde moze tekst koji je nacin rada, koje se metodi koriste, koji
-        treninzi postoje...
-      </div>
-
       <div className="mt-7 ">
         <h3 className="flex justify-center text-3xl mb-7">
           Sta drugi misle o nama?

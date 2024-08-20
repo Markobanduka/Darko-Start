@@ -98,7 +98,6 @@ const Images = ({ imgIndex }) => {
             }}
             transition={SPRING_OPTIONS}
             className="aspect-video w-full shrink-0 bg-neutral-800"
-            // className="aspect-video w-full shrink-0 bg-neutral-800"
           />
         );
       })}

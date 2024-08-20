@@ -13,26 +13,26 @@ const ContactPage = () => {
 
       <div className="flex justify-center items-center mb-8">
         <div className=" justify-center items center">
-          <div className="flex items-center text-2xl">
+          <div className="flex items-center text-2xl font-bold">
             Zemun, Radoja Dakića 57{" "}
             <span className="mx-3">
               <GiPathDistance />
             </span>
           </div>
-          <div className="flex items-center text-2xl">
+          <div className="flex items-center text-2xl font-bold">
             Ponedeljak-Subota 08-21h{" "}
             <span className="mx-2">
               <CiDumbbell />
             </span>
           </div>
-          <div className="flex items-center text-2xl">
+          <div className="flex items-center text-2xl font-bold">
             Dostupan parking{" "}
             <span className="mx-2">
               <TbParkingCircle />
             </span>
           </div>
           <div className="flex items-center underline underline-offset-4 text-2xl">
-            +381 64 4865787{" "}
+            <a href="tel:0644865787">+381 64 4865787</a>
             <span className="mx-2">
               <HiOutlinePhone />
             </span>
