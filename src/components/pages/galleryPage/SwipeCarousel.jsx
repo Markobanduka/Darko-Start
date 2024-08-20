@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "/teretana-3.webp",
-  "/teretane-beograd-1.jpg",
+  "/gym-1.jpeg",
+  "/gym-2.jpeg",
   "/licni-trener.jpg",
   "/Personalni-trener.jpg",
   "/personalni-trening.jpg",
