@@ -4,9 +4,10 @@ import { motion, useMotionValue } from "framer-motion";
 const imgs = [
   "/gym-1.jpeg",
   "/gym-2.jpeg",
-  "/licni-trener.jpg",
-  "/Personalni-trener.jpg",
-  "/personalni-trening.jpg",
+  "/gym-3.png",
+  "/gym-4.png",
+  "/gym-5.png",
+  "/gym-6.png",
 ];
 
 const ONE_SECOND = 1000;

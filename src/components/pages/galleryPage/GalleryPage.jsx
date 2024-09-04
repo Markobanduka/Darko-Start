@@ -1,5 +1,5 @@
 import { SwipeCarousel } from "./SwipeCarousel";
-import Cards from "../../ui/Cards";
+// import Cards from "../../ui/Cards";
 
 const App = () => {
   return (
@@ -8,12 +8,12 @@ const App = () => {
       <div className="">
         <SwipeCarousel />
       </div>
-      <div className="mt-7 ">
+      {/* <div className="mt-7 ">
         <h3 className="flex justify-center text-3xl mb-7">
           Sta drugi misle o nama?
         </h3>
         <Cards />
-      </div>
+      </div> */}
     </div>
   );
 };

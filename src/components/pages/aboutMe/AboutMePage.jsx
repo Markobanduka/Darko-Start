@@ -3,7 +3,7 @@ const AboutMePage = () => {
     <div className="grid md:grid-cols-2  gap-10 p-4 ">
       <div>
         <img
-          src="/darko1.jpg"
+          src="/darko1.jpeg"
           alt="Darko in black t-shirt"
           className="w-full h-auto max-w-md mx-auto lg:max-w-sm"
         />
