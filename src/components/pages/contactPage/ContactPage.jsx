@@ -50,7 +50,7 @@ const ContactPage = () => {
         ></iframe>
       </div>
       <div className="flex justify-center">
-        <h2 className="font-extrabold text-4xl text-slate-500 mb-5">
+        <h2 className="font-extrabold text-4xl text-slate-400 mb-5">
           Kontaktiraj nas
         </h2>
       </div>

@@ -54,7 +54,7 @@ const HomePage = () => {
                 onClick={() => handleScroll("scroll-target-poluindividualni")}
                 className="btn btn-primary text-white"
               >
-                Procitaj vise
+                Pročitaj vise
               </button>
             </div>
           </div>

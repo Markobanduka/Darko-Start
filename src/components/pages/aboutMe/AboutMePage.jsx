@@ -18,7 +18,7 @@ const AboutMePage = () => {
         personalizovane planove treninga. Specijalizovao sam se za funkcionalne
         treninge, rad sa gojaznim ljudima, izgradnju mišićne mase, poboljšanje
         performansi kod sportista, kao i rad sa osobama koje imaju određene
-        deformitete ili probleme sa bolom u kičmenom stubu. Posvecen sam
+        deformitete ili probleme sa bolom u kičmenom stubu. Posvećen sam
         stvaranju prilagodjenih programa treninga koji vam mogu pomoci da
         postignete zdraviji i funkcionalniji nacin zivota.
       </div>

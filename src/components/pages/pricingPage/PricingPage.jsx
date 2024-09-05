@@ -9,8 +9,8 @@ const PricingPage = () => {
             Programi koje nudimo u Start Fitness su:
           </h2>
           <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Nakon probnog testiranja i razgovora sa trenerom mozete izabrati
-            jedan od ponudjenih paketa:
+            Nakon probnog testiranja i razgovora sa trenerom možete izabrati
+            jedan od ponuđenih paketa:
           </p>
           <span id="scroll-target-individualni" />
         </div>
@@ -200,7 +200,7 @@ const PricingPage = () => {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span>Funkcionalna kicma</span>
+                  <span>Funkcionalna kičma</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
