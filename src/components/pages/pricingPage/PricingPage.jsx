@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaStarOfLife } from "react-icons/fa6";
 
 const PricingPage = () => {
   return (
@@ -23,14 +24,23 @@ const PricingPage = () => {
           <div className="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 mb-20">
             {/* Rekreativni paket Card */}
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white relative">
-              <h3 className="mb-4 text-2xl font-bold tracking-wider">
+              <h3 className="mb-4 text-2xl font-bold tracking-wider underline">
                 Rekreativni paket
               </h3>
-              <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold">2000 rsd</span>
+              <div className="flex justify-center items-baseline my-4">
+                <span className="text-5xl font-extrabold">
+                  2000 rsd
+                  <span className="font-normal text-red-500">*</span>
+                </span>
                 <span className="text-gray-500 dark:text-gray-400">
                   /trening
                 </span>
+              </div>
+              <div className="text-sm mb-6 text-red-500 text-balance w-64 relative">
+                <span className="absolute top-0 left-7">
+                  <FaStarOfLife size={8} />
+                </span>
+                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
@@ -104,12 +114,24 @@ const PricingPage = () => {
 
             {/* Specijalizovani paket Card */}
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 className="mb-4 text-3xl font-bold">Specijalizovani paket</h3>
-              <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold">3000 rsd</span>
+              <h3 className="mb-4 text-3xl font-bold underline">
+                Specijalizovani paket
+              </h3>
+              <div className="flex justify-center items-baseline my-4">
+                <span className="text-5xl font-extrabold">
+                  3000 rsd
+                  <span className="font-normal text-red-500">*</span>
+                </span>
+
                 <span className="text-gray-500 dark:text-gray-400">
                   /trening
                 </span>
+              </div>
+              <div className="text-sm mb-6 text-red-500 text-balance w-64 relative">
+                <span className="absolute top-0 left-7">
+                  <FaStarOfLife size={8} />
+                </span>
+                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
@@ -265,15 +287,24 @@ const PricingPage = () => {
           </h2>
           <div className="space-y-8 lg:grid  sm:gap-6 xl:gap-10 lg:space-y-0">
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 className="mb-4 text-2xl font-bold">
+              <h3 className="mb-4 text-2xl font-bold underline">
                 Poluindividualni paket
               </h3>
               <span className="text-gray-400 ">Cena treninga je po osobi</span>
-              <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold">1500 rsd</span>
+              <div className="flex justify-center items-baseline my-4">
+                <span className="text-5xl font-extrabold">
+                  1500 rsd
+                  <span className="font-normal text-red-500">*</span>
+                </span>
                 <span className="text-gray-500 dark:text-gray-400">
                   /trening
                 </span>
+              </div>
+              <div className="text-sm mb-6 text-red-500 text-balance w-64 relative">
+                <span className="absolute top-0 left-7">
+                  <FaStarOfLife size={8} />
+                </span>
+                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
