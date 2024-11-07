@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaStarOfLife } from "react-icons/fa6";
+// import { FaStarOfLife } from "react-icons/fa6";
 
 const PricingPage = () => {
   return (
@@ -30,17 +30,17 @@ const PricingPage = () => {
               <div className="flex justify-center items-baseline my-4">
                 <span className="text-5xl font-extrabold">
                   1500 rsd
-                  <span className="font-normal text-red-500">*</span>
+                  {/* <span className="font-normal text-red-500">*</span> */}
                 </span>
                 <span className="text-gray-500 dark:text-gray-400">
                   /trening
                 </span>
               </div>
               <div className="text-sm mb-6 text-red-500 text-balance w-64 relative">
-                <span className="absolute top-0 left-7">
+                {/* <span className="absolute top-0 left-7">
                   <FaStarOfLife size={8} />
                 </span>
-                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec
+                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec */}
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
@@ -120,7 +120,7 @@ const PricingPage = () => {
               <div className="flex justify-center items-baseline my-4">
                 <span className="text-5xl font-extrabold">
                   2500 rsd
-                  <span className="font-normal text-red-500">*</span>
+                  {/* <span className="font-normal text-red-500">*</span> */}
                 </span>
 
                 <span className="text-gray-500 dark:text-gray-400">
@@ -128,10 +128,10 @@ const PricingPage = () => {
                 </span>
               </div>
               <div className="text-sm mb-6 text-red-500 text-balance w-64 relative">
-                <span className="absolute top-0 left-7">
+                {/* <span className="absolute top-0 left-7">
                   <FaStarOfLife size={8} />
                 </span>
-                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec
+                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec */}
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
@@ -294,17 +294,17 @@ const PricingPage = () => {
               <div className="flex justify-center items-baseline my-4">
                 <span className="text-5xl font-extrabold">
                   1000 rsd
-                  <span className="font-normal text-red-500">*</span>
+                  {/* <span className="font-normal text-red-500">*</span> */}
                 </span>
                 <span className="text-gray-500 dark:text-gray-400">
                   /trening
                 </span>
               </div>
               <div className="text-sm mb-6 text-red-500 text-balance w-64 relative">
-                <span className="absolute top-0 left-7">
+                {/* <span className="absolute top-0 left-7">
                   <FaStarOfLife size={8} />
                 </span>
-                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec
+                prvih 5 prijavljenih ostvaruje 20% popusta za prvi mesec */}
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
