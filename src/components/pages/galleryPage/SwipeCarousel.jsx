@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "/gym-1.jpeg",
-  "/gym-2.jpeg",
-  "/gym-3.png",
-  "/gym-4.png",
-  "/gym-5.png",
-  "/gym-6.png",
+  "/gym-7.jpeg",
+  "/gym-8.jpeg",
+  "/gym-9.jpeg",
+  "/gym-10.jpeg",
+  "/gym-11.jpeg",
+  "/gym-12.jpeg",
 ];
 
 const ONE_SECOND = 1000;
@@ -82,6 +82,8 @@ export const SwipeCarousel = () => {
   );
 };
 
+import PropTypes from "prop-types";
+
 const Images = ({ imgIndex }) => {
   return (
     <>
@@ -89,21 +91,31 @@ const Images = ({ imgIndex }) => {
         return (
           <motion.div
             key={idx}
-            style={{
-              backgroundImage: `url(${imgSrc})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
             animate={{
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video w-full shrink-0 bg-neutral-800"
-          />
+            className="w-full shrink-0 flex items-center justify-center bg-neutral-900"
+          >
+            <img
+              src={imgSrc}
+              alt=""
+              className="
+                max-h-[80vh] w-auto
+                object-cover
+                md:object-contain
+                rounded-xl shadow-lg
+              "
+            />
+          </motion.div>
         );
       })}
     </>
   );
+};
+
+Images.propTypes = {
+  imgIndex: PropTypes.number.isRequired,
 };
 
 const Dots = ({ imgIndex, setImgIndex }) => {
@@ -124,6 +136,11 @@ const Dots = ({ imgIndex, setImgIndex }) => {
   );
 };
 
+Dots.propTypes = {
+  imgIndex: PropTypes.number.isRequired,
+  setImgIndex: PropTypes.func.isRequired,
+};
+
 const GradientEdges = () => {
   return (
     <>
@@ -132,3 +149,28 @@ const GradientEdges = () => {
     </>
   );
 };
+
+// --- Horizontal carousel ---
+// const Images = ({ imgIndex }) => {
+//   return (
+//     <>
+//       {imgs.map((imgSrc, idx) => {
+//         return (
+//           <motion.div
+//             key={idx}
+//             style={{
+//               backgroundImage: `url(${imgSrc})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//             animate={{
+//               scale: imgIndex === idx ? 0.95 : 0.85,
+//             }}
+//             transition={SPRING_OPTIONS}
+//             className="aspect-video w-full shrink-0 bg-neutral-800"
+//           />
+//         );
+//       })}
+//     </>
+//   );
+// };
