@@ -29,7 +29,7 @@ const PricingPage = () => {
               </h3>
               <div className="flex justify-center items-baseline my-4">
                 <span className="text-5xl font-extrabold">
-                  2000 rsd
+                  20 €
                   {/* <span className="font-normal text-red-500">*</span> */}
                 </span>
                 <span className="text-gray-500 dark:text-gray-400">
@@ -119,7 +119,7 @@ const PricingPage = () => {
               </h3>
               <div className="flex justify-center items-baseline my-4">
                 <span className="text-5xl font-extrabold">
-                  3000 rsd
+                  30 €
                   {/* <span className="font-normal text-red-500">*</span> */}
                 </span>
 
@@ -293,7 +293,7 @@ const PricingPage = () => {
               <span className="text-gray-400 ">Cena treninga je po osobi</span>
               <div className="flex justify-center items-baseline my-4">
                 <span className="text-5xl font-extrabold">
-                  1000 rsd
+                  10 €
                   {/* <span className="font-normal text-red-500">*</span> */}
                 </span>
                 <span className="text-gray-500 dark:text-gray-400">
