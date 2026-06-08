@@ -1,4 +1,3 @@
-import { Email } from "./Email";
 import { GiPathDistance } from "react-icons/gi";
 import { CiDumbbell } from "react-icons/ci";
 import { TbParkingCircle } from "react-icons/tb";
@@ -49,12 +48,6 @@ const ContactPage = () => {
           className="absolute left-0 top-0 w-full h-full  md:p-4 lg:p-6"
         ></iframe>
       </div>
-      <div className="flex justify-center">
-        <h2 className="font-extrabold text-4xl text-slate-400 mb-5">
-          Kontaktiraj nas
-        </h2>
-      </div>
-      <Email />
     </div>
   );
 };

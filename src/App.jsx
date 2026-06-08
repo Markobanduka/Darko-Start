@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import GalleryPage from "./components/pages/galleryPage/GalleryPage";
 import PricingPage from "./components/pages/pricingPage/PricingPage";
+import Chatbot from "./components/Chatbot";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="*" element={<HomePage />} />
         </Routes>
       </div>
+      <Chatbot/>
       <Footer />
     </div>
   );
