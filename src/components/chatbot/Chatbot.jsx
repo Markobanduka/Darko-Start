@@ -62,9 +62,11 @@ useEffect(() => {
     el.scrollTop = el.scrollHeight;
   }, [chatHistory, showChatbot]);
 
+  //onClick={() => setShowChatbot(prev => !prev)} in button id-"chatbot-toggler"
+
   return (
    <div className="fixed bottom-5 right-5 z-50">
-    <button id="chatbot-toggler" onClick={() => setShowChatbot(prev => !prev)} className="p-2 bg-primary text-white rounded-full">
+    <button id="chatbot-toggler"  className="p-2 bg-primary text-white rounded-full">
       <ChatbotIcon />
     </button>
     {showChatbot && (
