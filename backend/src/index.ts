@@ -1,9 +1,14 @@
 import express from "express";
+import cors from "cors"
+import "dotenv/config";
+import { getEnv } from "./lib/env";
 
-
-
+const env= getEnv();
 const app = express();
 
-app.listen(3001, () => {
-    console.log("Server is running on http://localhost:3001");
-});
+app.use(express.json());
+app.use(cors())
+
+app.listen(env.PORT , () => console.log("Server running on port", env.PORT));
+
+//1:18:56
