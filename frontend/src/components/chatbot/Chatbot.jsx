@@ -78,7 +78,7 @@ useEffect(() => {
         </button>
         </div>
              {/* Chatbot Body */}    
-             <div ref={chatBodyRef} className="chat-body p-4 overflow-y-auto h-[460px] flex flex-col scroll-smooth">
+             <div ref={chatBodyRef} className="chat-body p-4 overflow-y-auto h-[320px] sm:h-[400px] md:h-[460px] flex flex-col scroll-smooth">
                 <div className="message bot-message flex gap-[11px] items-center mb-4">
                     <div>
                     <ChatbotIcon />
