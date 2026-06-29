@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import "dotenv/config";
+import chatRoutes from "./routes/chat.routes";
+
 import { getEnv } from "./lib/env";
 import keepAliveCron from "./lib/cron";
 
@@ -26,50 +28,13 @@ app.use(cors({
   }
 }));
 
-// Health check
+app.use("/api/chat", chatRoutes);
+
+
 app.get("/health", (_req, res) => {
   res.json({ ok: true });
 });
 
-// CHAT endpoint
-app.post("/api/chat", async (req, res) => {
-  const { messages } = req.body;
-
-  if (!messages) {
-    return res.status(400).json({ error: "Messages are required" });
-  }
-
-  try {
-    console.log("Incoming messages:", JSON.stringify(messages, null, 2));
-
-    const response = await fetch(
-      `${process.env.GEMINI_URL}?key=${process.env.GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          contents: messages,
-        }),
-      }
-    );
-
-    const data = await response.json();
-
-
-    const botMessage =
-      data.candidates?.[0]?.content?.parts?.[0]?.text ||
-      data.error?.message ||
-      data.promptFeedback?.blockReason ||
-      "No response from model";
-
-    res.json({ text: botMessage });
-  } catch (err) {
-    console.error("SERVER ERROR:", err);
-    res.status(500).json({ error: "Server error" });
-  }
-});
 
 app.listen(env.PORT, () => {
   console.log("Server running on port", env.PORT);
