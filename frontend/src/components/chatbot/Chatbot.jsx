@@ -16,8 +16,8 @@ const Chatbot = () => {
     const chatBodyRef = useRef()
 
 
-    const API_URL = `${import.meta.env.VITE_API_URL}?key=${import.meta.env.VITE_GEMINI_API_KEY}`;
-
+    // const API_URL = `${import.meta.env.VITE_API_URL}?key=${import.meta.env.VITE_GEMINI_API_KEY}`;
+    const API_URL = import.meta.env.VITE_BACKEND_URL;
   const generateBotResponse = async (history) => {
 
     const updateHistory = (text) => {
@@ -38,14 +38,17 @@ const Chatbot = () => {
     });
 
     if (!response.ok) {
-      throw new Error(data.error.message || "Failed to fetch response");
+      const err = await response.json();
+      throw new Error(err.error || "Failed to fetch response");
     }
 
     const data = await response.json();
 
     const botMessage =
-      data.candidates?.[0]?.content?.parts?.[0]?.text ||
-      "Nisam uspeo da generišem odgovor.";
+      // data.candidates?.[0]?.content?.parts?.[0]?.text ||
+      // "Nisam uspeo da generišem odgovor.";
+
+      data.text
 
         updateHistory(botMessage)
 
@@ -62,11 +65,9 @@ useEffect(() => {
     el.scrollTop = el.scrollHeight;
   }, [chatHistory, showChatbot]);
 
-  //onClick={() => setShowChatbot(prev => !prev)} in button id-"chatbot-toggler"
-
   return (
    <div className="fixed bottom-5 right-5 z-50">
-    <button id="chatbot-toggler"  className="p-2 bg-primary text-white rounded-full">
+    <button id="chatbot-toggler" onClick={() => setShowChatbot(prev => !prev)}  className="p-2 bg-primary text-white rounded-full">
       <ChatbotIcon />
     </button>
     {showChatbot && (
