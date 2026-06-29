@@ -5,7 +5,7 @@ const envSchema = z.object({
     PORT: z.coerce.number().default(3001),
 
     FRONTEND_URL: z.string().url(),
-    API_URL: z.string().url(),
+    GEMINI_URL: z.string().url(),
     GEMINI_API_KEY: z.string().min(1),
 
 });

@@ -16,8 +16,7 @@ const Chatbot = () => {
     const chatBodyRef = useRef()
 
 
-    // const API_URL = `${import.meta.env.VITE_API_URL}?key=${import.meta.env.VITE_GEMINI_API_KEY}`;
-    const API_URL = import.meta.env.VITE_BACKEND_URL;
+    const GEMINI_URL = import.meta.env.VITE_BACKEND_URL;
   const generateBotResponse = async (history) => {
 
     const updateHistory = (text) => {
@@ -27,7 +26,7 @@ const Chatbot = () => {
     history = history.map(({role, text})=>({role, parts: [{text}]}) )
 
   try {
-    const response = await fetch(API_URL, {
+    const response = await fetch(GEMINI_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
