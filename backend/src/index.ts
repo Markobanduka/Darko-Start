@@ -57,10 +57,6 @@ app.post("/api/chat", async (req, res) => {
 
     const data = await response.json();
 
-    // 🔥 DEBUG LOG - OVO JE KLJUČNO
-    console.log("===== GEMINI RAW RESPONSE =====");
-    console.log(JSON.stringify(data, null, 2));
-    console.log("================================");
 
     const botMessage =
       data.candidates?.[0]?.content?.parts?.[0]?.text ||
@@ -75,7 +71,6 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-// Start server
 app.listen(env.PORT, () => {
   console.log("Server running on port", env.PORT);
 

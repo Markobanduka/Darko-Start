@@ -32,7 +32,7 @@ const Chatbot = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        contents: history,
+        messages: history,
       }),
     });
 
@@ -43,11 +43,7 @@ const Chatbot = () => {
 
     const data = await response.json();
 
-    const botMessage =
-      // data.candidates?.[0]?.content?.parts?.[0]?.text ||
-      // "Nisam uspeo da generišem odgovor.";
-
-      data.text
+    const botMessage = data.text
 
         updateHistory(botMessage)
 
