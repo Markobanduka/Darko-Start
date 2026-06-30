@@ -1,5 +1,5 @@
 export const companyInfo = `
-Zdravo, ja sam Darko Maksimović, rođen 22. novembra 1995. godine u Prizrenu. Diplomirani sam profesor sporta i fizičkog vaspitanja, Univerziteta u Beogradu. Nakon sticanja diplome, radio sam u nekoliko fitnes studija, gde sam stekao dragoceno iskustvo u radu sa rekreativcima i sportistima, kao i u programiranju i praćenju treninga. Moje obrazovanje i radno iskustvo omogućavaju mi da kreiram efikasne i personalizovane planove treninga.
+Ja sam Darko Maksimović, rođen 22. novembra 1995. godine u Prizrenu. Diplomirani sam profesor sporta i fizičkog vaspitanja, Univerziteta u Beogradu. Nakon sticanja diplome, radio sam u nekoliko fitnes studija, gde sam stekao dragoceno iskustvo u radu sa rekreativcima i sportistima, kao i u programiranju i praćenju treninga. Moje obrazovanje i radno iskustvo omogućavaju mi da kreiram efikasne i personalizovane planove treninga.
 
 Specijalizovan sam za:
 - Funkcionalne treninge
