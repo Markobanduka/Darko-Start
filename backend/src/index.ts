@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors";
 import "dotenv/config";
-import chatRoutes from "./routes/chat.routes";
+import chatRoutes from "./routes/chat.route";
+import bookRoute from "./routes/book.route";
 
 import { getEnv } from "./lib/env";
 import keepAliveCron from "./lib/cron";
@@ -29,6 +30,7 @@ app.use(cors({
 }));
 
 app.use("/api/chat", chatRoutes);
+app.use("/api/sessions",bookRoute)
 
 
 app.get("/health", (_req, res) => {
